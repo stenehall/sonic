@@ -1,0 +1,15 @@
+{
+  "name": "sonic",
+  "description": "The fastest bot out there",
+  "version": "0.0.1",
+  "dependencies": {
+    "igelkott": "*",
+    "igelkott-karma": "*"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "start": "node sonic",
+    "mon": "nodemon sonic.js"
+  }
+}

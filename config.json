@@ -1,0 +1,12 @@
+{
+  "server": {
+    "host": "chat.freenode.net",
+    "port": 6667,
+    "nick": "sonic",
+    "channels": [
+      "##botbotbot"
+    ]
+  },
+  "trigger": "!",
+  "plugins": ["001", "433", "privmsg", "log", "connect", "ping", "help", "plugin"]
+}
