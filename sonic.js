@@ -4,6 +4,7 @@ var Sonic = function Sonic() {
   Igelkott.call(this);
 };
 
+
 Sonic.prototype = Object.create(Igelkott.prototype, {constructor: {value: Sonic}});
 
 Sonic.prototype.load = function load(pluginName) {
@@ -21,5 +22,10 @@ Sonic.prototype.load = function load(pluginName) {
   }
 };
 
-var sonic = new Sonic();
+var sonic = new Sonic({
+  "database": {
+    "app_id": process.env.APP_ID,
+    "js_key": process.env.JS_KEY
+  }
+});
 sonic.connect();
