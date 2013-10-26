@@ -4,11 +4,11 @@
     "port": 6667,
     "nick": "sonic",
     "channels": [
-      "##botbotbot"
+      "#noweb"
     ]
   },
   "trigger": "!",
-  "plugins": ["001", "433", "privmsg", "log", "connect", "ping", "help", "plugin"],
+  "plugins": ["001", "433", "privmsg", "log", "connect", "ping", "help", "plugin", "karma"],
   "database": {
     "app_id":"",
     "js_key": ""
