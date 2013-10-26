@@ -1,7 +1,7 @@
 var Igelkott = require('igelkott');
 
-var Sonic = function Sonic() {
-  Igelkott.call(this);
+var Sonic = function Sonic(config) {
+  Igelkott.call(this, config);
 };
 
 
@@ -22,10 +22,12 @@ Sonic.prototype.load = function load(pluginName) {
   }
 };
 
-var sonic = new Sonic({
+var config = {
   "database": {
     "app_id": process.env.APP_ID,
     "js_key": process.env.JS_KEY
   }
-});
+};
+
+var sonic = new Sonic(config);
 sonic.connect();
